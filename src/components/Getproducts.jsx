@@ -49,7 +49,7 @@ const Getproducts = () => {
   //console.log("The products fetched are", products)
   return (
     <div className='row'>
-      <h3 className="text-primary">Available Products</h3>
+      <center><h3 className="text-primary">Available Products</h3></center>
 
       <h4 className="text-danger">{error}</h4>
 

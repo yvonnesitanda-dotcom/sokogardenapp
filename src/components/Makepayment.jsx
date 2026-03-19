@@ -13,7 +13,7 @@ const Makepayment = () => {
 
     // console.log("The details passed from getproducts are: ",product)
     // below we specify the image base url
-    const img_url = "https://kbenkamotho.alwaysdata.net/static/images/"
+    const img_url = "https://yvonnesitanda.alwaysdata.net/static/images/"
 
     // initialize hooks to manage the state of your application
     const [number, setNumber] = useState("")
@@ -37,7 +37,7 @@ const Makepayment = () => {
             formdata.append("phone", number)
             formdata.append("amount", product.product_cost)
 
-            const response = await axios.post("https://kbenkamotho.alwaysdata.net/api/mpesa_payment", formdata)
+            const response = await axios.post("https://yvonnesitanda.alwaysdata.net/api/mpesa_payment", formdata)
 
             // set loading back to default
             setLoading(false)
@@ -64,7 +64,7 @@ const Makepayment = () => {
         <div className="col-md-1">
             <input type="button"
             className="btn btn-primary"
-            value="<- Back"
+            value="< Back"
             onClick={() => navigate("/") } />
         </div>
 
@@ -103,9 +103,9 @@ const Makepayment = () => {
                     className='btn btn-success' />
                 </form>
             </div>
-        </div>
+        </div> 
 
-    </div>
+    </div> 
   )
 }
 
